@@ -1,0 +1,12 @@
+<div>
+  <p>Укажите ваш возраст:</p> 
+  <input type="number" [(ngModel)]="isFullYear.age">
+  <button (click)="isFullYear.isAge()">Okay</button>
+  <p>{{isFullYear.message}}</p>
+</div>
+<ul class="menu">
+  <li class="menu__item" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}">Start</li>
+  <li class="menu__item" routerLinkActive="active" routerLink="/books">Books</li>
+  <li class="menu__item" routerLinkActive="active" routerLink="/about">About</li>
+</ul>
+<router-outlet></router-outlet>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="container__list">
+    <h3>Library</h3>
+    <ul class="container__list">
+      <li class="container__item" *ngFor="let book of library" (click)="show(book)">
+        <h5 class="container__item-title">{{book.title}}</h5>
+        <div>
+          <p>Автор:</p>
+          <p class="container__item-autor" *ngFor="let autor of book.autors">
+            {{autor}}.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container__spec">
+    <router-outlet></router-outlet>
+  </div>
+</div>

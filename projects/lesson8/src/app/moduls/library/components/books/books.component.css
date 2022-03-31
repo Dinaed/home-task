@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+}
+.container__list {
+  flex: 30%;
+  list-style: none;
+}
+.container__item {
+  border: 1px solid darkcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.container__item div{
+  display: flex;
+}
+.container__item-autor {
+  margin-left: 2px;
+}
+.container__spec {
+  flex: 70%;
+}
